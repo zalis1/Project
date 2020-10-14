@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<h1> Submit Questions </h1>
+<body>
+    <form action="mailto:zalis1@babson.edu" method="POST">
+<label for="Last Name"> Last Name</label>
+<input
+type="text"
+name="Last Name"
+id="Last Name"
+placeholder="Enter Your Last Name"
+    />
+    <p>
+    <label for="First Name"> First Name</label>
+    <input
+    type="text"
+    name="First Name"
+    id="First Name"
+    placeholder="Enter Your First Name"
+/>
+<p>
+    <label for="Email"> Email</label>
+<input
+type="text"
+name="Email"
+id="Email"
+placeholder="Enter Your Email"
+
+/>
+
+<div>
+    Gender:
+    <label
+    >Male
+    <input type="radio" name="gender" value="male" />
+</label>
+<label
+>Female
+<input type="radio" name="gender" value="female"
+/>
+</div>
+<div> I would like to see more of: </div>
+<div>
+    <input
+    type="checkbox"
+    id="Sightseeing"
+    name="Sightseeing"
+    value="Sightseeing"
+/>
+<label for="Sightseeing" > Sightseeing</label>
+</div>
+<div>
+    <input
+    type="checkbox"
+    id="History of Istanbul"
+    name="topics"
+    value="History of Istanbul"
+/>
+<label for="History of Istanbul" > History of Istanbul</label>
+</div>
+<div>
+    <input
+    type="checkbox"
+    id="Tips before Travelling"
+    name="Tips before Travelling"
+    value="Tips before Travelling"
+/>
+<label for="Tips before Travelling" > Tips before Travelling</label>
+<p>
+    <div>
+        <div>
+        <label for="expectation-select">Was this site helpful?</label>
+        </div>
+        <div>
+        <select name="grade" id="grade-select">
+        <option value="">-- Was this site helpful --</option>
+        <option value="Very Helpful">Very Helpful</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Not Helpful">Not Helpful</option>
+        </select>
+        </div>
+        </div>
+        <p>
+            <div>
+                <div>
+                    <label for= "comments" > Submit Questions on Istanbul: </label>
+                </div>
+                <div>
+                    <textarea
+                    id="comments"
+                    name="comments"
+                    rows="5"
+                    cols="25"
+                    placeholder="Enter your question here..."
+                    ></textarea>
+                </div>
+            </div>
+        <p>
+            <button type="submit" name="submit-button">
+                SUBMIT <img src="images/mailbox.png"
+                height="30"
+                alt="submit button" />
+                </button>
+</p>
+<button type="Reset" name="reset-button">
+    RESET <img src="images/reset.png"
+    height="30"
+    alt="submit button" />
+    </button>
+</p>
+</form>
+</body>
+</html>
