@@ -130,14 +130,139 @@ body {background-color:lightblue;}
 <b><h1>SIGHTSEEING IN ISTANBUL </h1></b>
 </body>
 <b>TOP THREE ATTRACTIONS TO SEE WHEN IN ISTANBUL</b>
-<b><p>1. Ayasofya</p></b>
-<p>
-<img src="images/turkey-istanbul-aya-sofya.jpg" alt="Ayasofya" />
-<b><p> 2. Topkapi Sarayi </p></b>
-<img src="images/turkey-istanbul-interior-topkapi-palace.jpg" alt="Topkapi Palace" />
-<b><p> 3. Grand Bazaar </p></b>
-<img src="images/turkey-istanbul-lantern-display-grand-bazaar.jpg" alt="Grand Bazaar"
-/>
+
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2><b>1. Ayasofya</b></h2>
+  <p>The Hagia Sophia is an enormous architectural marvel in Istanbul, Turkey, that was originally built as a Christian basilica nearly 1,500 years ago. Much like the Eiffel Tower in Paris or the Parthenon in Athens, the Hagia Sophia is a long-enduring symbol of the cosmopolitan city. However, as notable as the structure is itself, its role in the history of Istanbul—and, for that matter, the world—is also significant and touches upon matters related to international politics, religion, art and architecture.</p>
+  <h2><p><b>2. Topkapi Palace</b></p></h2>
+  <p>Topkapı Palace (Topkapı Sarayı) is the subject of more colourful stories than most of the world's museums put together. Libidinous sultans, ambitious courtiers, beautiful concubines and scheming eunuchs lived and worked here between the 15th and 19th centuries when it was the court of the Ottoman empire. A visit to the palace's opulent pavilions, jewel-filled Treasury and sprawling Harem gives a fascinating glimpse into their lives.</p>
+  <h2><b>3.Grand Bazaar</b></h2>
+  <p>One of the largest and oldest covered bazaars in the world, the Grand Bazaar is 30,700 square meters with over 60 streets and alleys and 4,000 shops. The original historical core of the bazaar, İç Bedesten, was completed by Mehmet the Conqueror in 1461. A “bedesten” refers to an indoor arcade with shops and there are several areas within the bazaar referred to by this name. </p>
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/turkey-istanbul-lantern-display-grand-bazaar.jpg" style="width:100%">
+    <div class="text">The Grand Bazaar</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/turkey-istanbul-interior-topkapi-palace.jpg" style="width:100%">
+    <div class="text">Topkapi Palace</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/turkey-istanbul-aya-sofya.jpg" style="width:100%">
+    <div class="text">Ayasofya Museum</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+
 
 </p>
 <script>
