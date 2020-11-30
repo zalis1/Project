@@ -95,7 +95,7 @@ body {background-color:lightblue;}
             </head>
             <body>
             
-              <div class="topnav"> id="myTopnav"
+              <div class="topnav" id="myTopnav"> 
                 <li><a class="active"  href="#index">About Istanbul</a></li>
                 <li><a href="#Q&A"> Question and Answer</a> </a></li>
                 <li><a href="#contact">Contact </a></li>
@@ -106,6 +106,18 @@ body {background-color:lightblue;}
                 </a>
                 <input type="text" placeholder="Search..">
               </div>
+              
+              <div style="padding-left:16px">
+                <script>
+                  function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                      x.className += " responsive";
+                    } else {
+                      x.className = "topnav";
+                    }
+                  }
+                  </script>
 <body>
     
     <style>
